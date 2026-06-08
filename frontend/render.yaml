@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: qr-code-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://qr-code-api.onrender.com
+
