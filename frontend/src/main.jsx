@@ -209,7 +209,7 @@ function DynamicFields({ form, type, updateForm }) {
     text: { label: 'Text', placeholder: 'Write anything you want to encode', inputMode: 'text', type: 'text' },
     url: { label: 'Website URL', placeholder: 'example.com', inputMode: 'url', type: 'url' },
     email: { label: 'Email address', placeholder: 'hello@example.com', inputMode: 'email', type: 'email' },
-    phone: { label: 'Phone number', placeholder: '+1 555 0100', inputMode: 'tel', type: 'tel' },
+    phone: { label: 'Phone number', placeholder: 'phone number', inputMode: 'tel', type: 'tel' },
   }[type];
 
   return (
